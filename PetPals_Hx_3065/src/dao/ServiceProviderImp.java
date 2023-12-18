@@ -159,7 +159,7 @@ public class ServiceProviderImp implements ServiceProvider{
 		    int t= sc.nextInt();
 		    if(t==1) {
 			    while(rs.next()) {
-			    		System.out.println(rs.getInt(1)+" "+rs.getDate(2)+" "+rs.getString(3));
+			    		System.out.println(rs.getInt(1)+" "+rs.getDate(2));
 			    }
 			    
 		    }
@@ -178,7 +178,7 @@ public class ServiceProviderImp implements ServiceProvider{
 		        Statement stmt = con.createStatement();
 		        rs = stmt.executeQuery("SELECT * FROM participants");
 		        while (rs.next()) {
-		        	System.out.println(rs.getInt(1) + " " + rs.getInt(2) + " " + rs.getString(3));
+		        	System.out.println(rs.getInt(1) + " " + rs.getInt(2));
 		        } 
 		    }
 		    else{
